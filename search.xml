@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>OLED屏SSD1306丐中丐驱动</title>
+      <link href="/2021/09/17/210917-ssd1306-gai-zhong-gai-qu-dong/"/>
+      <url>/2021/09/17/210917-ssd1306-gai-zhong-gai-qu-dong/</url>
+      
+        <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h1 id="OLED屏SSD1306丐中丐驱动"><a href="#OLED屏SSD1306丐中丐驱动" class="headerlink" title="OLED屏SSD1306丐中丐驱动"></a>OLED屏SSD1306丐中丐驱动</h1><hr><h3 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h3><p><a href="https://github.com/RagingWaves/OLEDLib-SSD1306">GitHub</a></p><hr><p>用Arduino玩OLED，Adafruit GFX这类图形库用得确实方便，奈何STM32找不到满意的库。。。</p><p>正好在做的一个项目需要OLED屏，就顺便做了个类似的图形库。</p><p>主要是需要位图按任意坐标显示，就暂时没开发其他功能了，printf就做了个样子。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 项目 </tag>
+            
+            <tag> OLED </tag>
+            
+            <tag> STM32 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2021暑假总结</title>
       <link href="/2021/08/31/210831-shu-jia-zong-jie/"/>
       <url>/2021/08/31/210831-shu-jia-zong-jie/</url>

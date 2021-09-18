@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="卫星定位模块NMEA协议, 激沄的个人站">
+    <meta name="keywords" content="OLED屏SSD1306丐中丐驱动, 激沄的个人站">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>卫星定位模块NMEA协议 | 激沄的个人站</title>
+    <title>OLED屏SSD1306丐中丐驱动 | 激沄的个人站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -369,12 +369,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">卫星定位模块NMEA协议</h1>
+                    <h1 class="description center-align post-title">OLED屏SSD1306丐中丐驱动</h1>
                 </div>
             </div>
         </div>
@@ -490,16 +490,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">笔记</span>
+                            <a href="/tags/%E9%A1%B9%E7%9B%AE/">
+                                <span class="chip bg-color">项目</span>
                             </a>
                         
-                            <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                                <span class="chip bg-color">模块</span>
+                            <a href="/tags/OLED/">
+                                <span class="chip bg-color">OLED</span>
                             </a>
                         
-                            <a href="/tags/%E5%8D%AB%E6%98%9F%E5%AE%9A%E4%BD%8D/">
-                                <span class="chip bg-color">卫星定位</span>
+                            <a href="/tags/STM32/">
+                                <span class="chip bg-color">STM32</span>
                             </a>
                         
                     </div>
@@ -510,8 +510,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                笔记
+                            <a href="/categories/%E9%A1%B9%E7%9B%AE/" class="post-category">
+                                项目
                             </a>
                         
                     </div>
@@ -523,7 +523,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-18
+                    2021-09-17
                 </div>
                 
 
@@ -532,14 +532,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    903
+                    95
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -559,579 +559,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script src="\assets\js\APlayer.min.js"> </script><h1 id="卫星定位模块NMEA协议"><a href="#卫星定位模块NMEA协议" class="headerlink" title="卫星定位模块NMEA协议"></a>卫星定位模块NMEA协议</h1><hr>
-<h2 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h2><h3 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a>分隔符</h3><table>
-<thead>
-<tr>
-<th>符号</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$</td>
-<td>语句开始</td>
-</tr>
-<tr>
-<td>,</td>
-<td>信息分隔</td>
-</tr>
-<tr>
-<td>*</td>
-<td>校验码</td>
-</tr>
-<tr>
-<td>\r\n</td>
-<td>换行符（不显示），语句结束</td>
-</tr>
-</tbody></table>
-<p>示例：</p>
-<p>$GNZDA,060620.00,21,06,2021,00,00*4E\r\n</p>
-<h3 id="命令前缀"><a href="#命令前缀" class="headerlink" title="命令前缀"></a>命令前缀</h3><table>
-<thead>
-<tr>
-<th>前缀</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>GP</td>
-<td>GPS-QZSS-SBAS卫星系统</td>
-</tr>
-<tr>
-<td>BD</td>
-<td>北斗卫星系统</td>
-</tr>
-<tr>
-<td>GL</td>
-<td>GLONASS格洛纳斯卫星系统</td>
-</tr>
-<tr>
-<td>GI</td>
-<td>INSAT卫星系统</td>
-</tr>
-<tr>
-<td>GA</td>
-<td>GALILEO伽利略卫星系统</td>
-</tr>
-<tr>
-<td>GN</td>
-<td>所有卫星系统的混合</td>
-</tr>
-</tbody></table>
-<h3 id="命令后缀"><a href="#命令后缀" class="headerlink" title="命令后缀"></a>命令后缀</h3><table>
-<thead>
-<tr>
-<th>后缀</th>
-<th>解释</th>
-<th>主要包含信息</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>GGA</td>
-<td>定位信息</td>
-<td>时间、位置和定位相关数据</td>
-</tr>
-<tr>
-<td>GSA</td>
-<td>当前卫星信息</td>
-<td>定位模式、精度</td>
-</tr>
-<tr>
-<td>GRS</td>
-<td>卫星伪距残差信息</td>
-<td>卫星伪距残差信息</td>
-</tr>
-<tr>
-<td>GSV</td>
-<td>可见卫星数</td>
-<td>卫星数量、编号、仰角、方位角、信噪比</td>
-</tr>
-<tr>
-<td>RMC</td>
-<td>推荐定位信息</td>
-<td>时间、定位状态、位置信息</td>
-</tr>
-<tr>
-<td>VTG</td>
-<td>地面运动信息</td>
-<td>航向、速度</td>
-</tr>
-<tr>
-<td>ZDA</td>
-<td>时间信息</td>
-<td>详细的时间信息</td>
-</tr>
-<tr>
-<td>GLL</td>
-<td>地理信息</td>
-<td>经纬度、半球</td>
-</tr>
-<tr>
-<td>GST</td>
-<td>GNSS位误差信息</td>
-<td>误差相关信息</td>
-</tr>
-<tr>
-<td>TXT</td>
-<td>系统或用户定义信息</td>
-<td>系统或用户定义信息</td>
-</tr>
-</tbody></table>
+                <script src="\assets\js\APlayer.min.js"> </script><h1 id="OLED屏SSD1306丐中丐驱动"><a href="#OLED屏SSD1306丐中丐驱动" class="headerlink" title="OLED屏SSD1306丐中丐驱动"></a>OLED屏SSD1306丐中丐驱动</h1><hr>
+<h3 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h3><p><a target="_blank" rel="noopener" href="https://github.com/RagingWaves/OLEDLib-SSD1306">GitHub</a></p>
 <hr>
-<h2 id="语句内容"><a href="#语句内容" class="headerlink" title="语句内容"></a>语句内容</h2><h3 id="GGA"><a href="#GGA" class="headerlink" title="GGA"></a>GGA</h3><table>
-<thead>
-<tr>
-<th>示例</th>
-<th>描述</th>
-<th>格式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$GNGGA</td>
-<td>命令</td>
-<td></td>
-</tr>
-<tr>
-<td>060620.000</td>
-<td>UTC时间</td>
-<td>时时分分秒秒.秒秒秒</td>
-</tr>
-<tr>
-<td>3907.22309</td>
-<td>纬度</td>
-<td>度度分分.分分分分</td>
-</tr>
-<tr>
-<td>N</td>
-<td>北纬or南纬</td>
-<td>N北纬，S南纬</td>
-</tr>
-<tr>
-<td>11547.87484</td>
-<td>经度</td>
-<td>度度度分分.分分分分</td>
-</tr>
-<tr>
-<td>E</td>
-<td>东经or西经</td>
-<td>E东经，W西经</td>
-</tr>
-<tr>
-<td>1</td>
-<td>定位代号指示器</td>
-<td><a href="#toc-heading-13">见附表1</a></td>
-</tr>
-<tr>
-<td>11</td>
-<td>使用中的卫星数</td>
-<td>单位（个）</td>
-</tr>
-<tr>
-<td>2.4</td>
-<td>水平精度</td>
-<td>单位（米）</td>
-</tr>
-<tr>
-<td>97.2</td>
-<td>海拔高度</td>
-<td>单位（米）</td>
-</tr>
-<tr>
-<td>M</td>
-<td>单位</td>
-<td>米</td>
-</tr>
-<tr>
-<td>-8.8</td>
-<td>地表平均高度</td>
-<td>单位（米）</td>
-</tr>
-<tr>
-<td>M</td>
-<td>单位</td>
-<td>米</td>
-</tr>
-<tr>
-<td>*67</td>
-<td>校验码</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="GLL"><a href="#GLL" class="headerlink" title="GLL"></a>GLL</h3><table>
-<thead>
-<tr>
-<th>示例</th>
-<th>描述</th>
-<th>格式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$GNGLL</td>
-<td>命令</td>
-<td></td>
-</tr>
-<tr>
-<td>3857.22309</td>
-<td>纬度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>N</td>
-<td>纬度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>11447.87484</td>
-<td>经度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>E</td>
-<td>经度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>060620.000</td>
-<td>UTC时间</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>A</td>
-<td>定位状态</td>
-<td>A有效定位，V无效定位</td>
-</tr>
-<tr>
-<td>*45</td>
-<td>校验码</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-</tbody></table>
-<h3 id="GSA"><a href="#GSA" class="headerlink" title="GSA"></a>GSA</h3><table>
-<thead>
-<tr>
-<th>示例</th>
-<th>描述</th>
-<th>格式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$GNGSA</td>
-<td>命令</td>
-<td></td>
-</tr>
-<tr>
-<td>A</td>
-<td>定位模式</td>
-<td><a href="#toc-heading-14">见附表2</a></td>
-</tr>
-<tr>
-<td>3</td>
-<td>定位模式</td>
-<td><a href="#%E9%99%84%E8%A1%A83">见附表3</a></td>
-</tr>
-<tr>
-<td>04</td>
-<td>信息频道1</td>
-<td></td>
-</tr>
-<tr>
-<td>09</td>
-<td>信息频道2</td>
-<td></td>
-</tr>
-<tr>
-<td>……</td>
-<td>…信息频道12</td>
-<td></td>
-</tr>
-<tr>
-<td>2.9</td>
-<td>位置经度</td>
-<td>单位（米）</td>
-</tr>
-<tr>
-<td>2.4</td>
-<td>水平精度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>1.7</td>
-<td>垂直精度</td>
-<td>单位（米）</td>
-</tr>
-<tr>
-<td>1*32</td>
-<td>校验码</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="GSV"><a href="#GSV" class="headerlink" title="GSV"></a>GSV</h3><table>
-<thead>
-<tr>
-<th>示例</th>
-<th>描述</th>
-<th>格式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$GPGSV</td>
-<td>命令</td>
-<td></td>
-</tr>
-<tr>
-<td>4</td>
-<td>信息总数</td>
-<td></td>
-</tr>
-<tr>
-<td>3</td>
-<td>信息号码</td>
-<td>当前信息是信息总数中的第n条</td>
-</tr>
-<tr>
-<td>13</td>
-<td>卫星总数</td>
-<td></td>
-</tr>
-<tr>
-<td>28</td>
-<td>卫星编号</td>
-<td></td>
-</tr>
-<tr>
-<td>28</td>
-<td>卫星仰角</td>
-<td></td>
-</tr>
-<tr>
-<td>185</td>
-<td>卫星方位角</td>
-<td></td>
-</tr>
-<tr>
-<td>27</td>
-<td>信噪比</td>
-<td></td>
-</tr>
-<tr>
-<td>……</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>35</td>
-<td>卫星编号</td>
-<td>同上</td>
-</tr>
-<tr>
-<td>67</td>
-<td>卫星仰角</td>
-<td>同上</td>
-</tr>
-<tr>
-<td>107</td>
-<td>卫星方位角</td>
-<td>同上</td>
-</tr>
-<tr>
-<td>36</td>
-<td>信噪比</td>
-<td>同上</td>
-</tr>
-<tr>
-<td>0*6E</td>
-<td>校验码</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="RMC"><a href="#RMC" class="headerlink" title="RMC"></a>RMC</h3><table>
-<thead>
-<tr>
-<th>示例</th>
-<th>描述</th>
-<th>格式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$GPRMC</td>
-<td>命令</td>
-<td></td>
-</tr>
-<tr>
-<td>060620.000</td>
-<td>UTC时间</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>A</td>
-<td>定位状态</td>
-<td>A有效定位，V无效定位</td>
-</tr>
-<tr>
-<td>3516.25639</td>
-<td>纬度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>N</td>
-<td>纬度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>11620.45264</td>
-<td>经度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>E</td>
-<td>经度</td>
-<td>同<a href="#toc-heading-6">GGA</a></td>
-</tr>
-<tr>
-<td>1.36</td>
-<td>对地速度</td>
-<td>单位（节）</td>
-</tr>
-<tr>
-<td>52.37</td>
-<td>对地方向</td>
-<td>单位（度）</td>
-</tr>
-<tr>
-<td>210621</td>
-<td>日期</td>
-<td>日日月月年年</td>
-</tr>
-<tr>
-<td>V*39</td>
-<td>校验码</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="VTG"><a href="#VTG" class="headerlink" title="VTG"></a>VTG</h3><table>
-<thead>
-<tr>
-<th>示例</th>
-<th>描述</th>
-<th>格式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$GNVTG</td>
-<td>命令</td>
-<td></td>
-</tr>
-<tr>
-<td>52.37</td>
-<td>实际对地方向</td>
-<td>单位（度）</td>
-</tr>
-<tr>
-<td>T</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>磁极对地方向</td>
-<td>单位（度）</td>
-</tr>
-<tr>
-<td>M</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>1.36</td>
-<td>对地速度</td>
-<td>单位（节）</td>
-</tr>
-<tr>
-<td>N</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2.51</td>
-<td>对地速度</td>
-<td>单位（公里/小时）</td>
-</tr>
-<tr>
-<td>K</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>A*12</td>
-<td>校验码</td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="附表"><a href="#附表" class="headerlink" title="附表"></a>附表</h3><h4 id="附表1"><a href="#附表1" class="headerlink" title="附表1"></a>附表1</h4><p>定位代号指示器</p>
-<table>
-<thead>
-<tr>
-<th>数值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0</td>
-<td>未定位或无效定位</td>
-</tr>
-<tr>
-<td>1</td>
-<td>GPS SPS商业用途模式</td>
-</tr>
-<tr>
-<td>2</td>
-<td>偏差修正GPS（即DGPS）</td>
-</tr>
-<tr>
-<td>3</td>
-<td>GPS PPS军用格式</td>
-</tr>
-</tbody></table>
-<h4 id="附表2"><a href="#附表2" class="headerlink" title="附表2"></a>附表2</h4><p>定位模式</p>
-<table>
-<thead>
-<tr>
-<th>数值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>M</td>
-<td>手动设置工作模式</td>
-</tr>
-<tr>
-<td>A</td>
-<td>自动设置工作于二维定位or三维定位</td>
-</tr>
-</tbody></table>
-<p>####附表3</p>
-<p>定位模式</p>
-<table>
-<thead>
-<tr>
-<th>数值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>无效定位</td>
-</tr>
-<tr>
-<td>2</td>
-<td>二维定位</td>
-</tr>
-<tr>
-<td>3</td>
-<td>三维定位</td>
-</tr>
-</tbody></table>
+<p>用Arduino玩OLED，Adafruit GFX这类图形库用得确实方便，奈何STM32找不到满意的库。。。</p>
+<p>正好在做的一个项目需要OLED屏，就顺便做了个类似的图形库。</p>
+<p>主要是需要位图按任意坐标显示，就暂时没开发其他功能了，printf就做了个样子。</p>
 
                 
             </div>
@@ -1158,7 +591,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://www.ragingwaves.xyz/2021/07/18/210718-wei-xing-ding-wei-mo-kuai-nmea-xie-yi/">http://www.ragingwaves.xyz/2021/07/18/210718-wei-xing-ding-wei-mo-kuai-nmea-xie-yi/</a>
+                    <a href="http://www.ragingwaves.xyz/2021/09/17/210917-ssd1306-gai-zhong-gai-qu-dong/">http://www.ragingwaves.xyz/2021/09/17/210917-ssd1306-gai-zhong-gai-qu-dong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1196,16 +629,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">笔记</span>
+                                <a href="/tags/%E9%A1%B9%E7%9B%AE/">
+                                    <span class="chip bg-color">项目</span>
                                 </a>
                             
-                                <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                                    <span class="chip bg-color">模块</span>
+                                <a href="/tags/OLED/">
+                                    <span class="chip bg-color">OLED</span>
                                 </a>
                             
-                                <a href="/tags/%E5%8D%AB%E6%98%9F%E5%AE%9A%E4%BD%8D/">
-                                    <span class="chip bg-color">卫星定位</span>
+                                <a href="/tags/STM32/">
+                                    <span class="chip bg-color">STM32</span>
                                 </a>
                             
                         </div>
@@ -1517,9 +950,68 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/09/17/210917-ssd1306-gai-zhong-gai-qu-dong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="OLED屏SSD1306丐中丐驱动">
+                        
+                        <span class="card-title">OLED屏SSD1306丐中丐驱动</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%A1%B9%E7%9B%AE/" class="post-category">
+                                    项目
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%A1%B9%E7%9B%AE/">
+                        <span class="chip bg-color">项目</span>
+                    </a>
+                    
+                    <a href="/tags/OLED/">
+                        <span class="chip bg-color">OLED</span>
+                    </a>
+                    
+                    <a href="/tags/STM32/">
+                        <span class="chip bg-color">STM32</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/08/31/210831-shu-jia-zong-jie/">
                     <div class="card-image">
@@ -1537,9 +1029,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1561,55 +1053,6 @@
                     
                     <a href="/tags/%E6%9A%91%E5%81%87/">
                         <span class="chip bg-color">暑假</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/06/26/210626-kong-jian-zhuang-xiu-zhong/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="空间装修中">
-                        
-                        <span class="card-title">空间装修中</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-26
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%BB%BA%E7%AB%99/" class="post-category">
-                                    建站
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%BB%BA%E7%AB%99/">
-                        <span class="chip bg-color">建站</span>
                     </a>
                     
                 </div>
